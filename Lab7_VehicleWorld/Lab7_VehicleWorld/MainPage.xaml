@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab7_VehicleWorld.MainPage">
+
+    <ScrollView>
+        <!--main container for UI elements-->
+        <StackLayout>
+            <!--user chooses vehicle type-->
+            <!--SelectedIndexChanged event triggers OnVehicleSelected event handler when user changes selection-->
+            <Picker x:Name="vehiclePicker" Title="Choose a Vehicle" SelectedIndexChanged="OnVehicleSelected">
+                <Picker.Items>
+                    <x:String>Car</x:String>
+                    <x:String>Motorcycle</x:String>
+                    <x:String>Bicycle</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <!--display corresponding image for chosen vehicle-->
+            <Image x:Name="vehicleImage" Source="" />
+            
+            <!--display vehicle fact-->
+            <Label x:Name="vehicleFactLabel" Text="" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
