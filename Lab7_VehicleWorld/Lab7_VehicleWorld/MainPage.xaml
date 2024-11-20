@@ -17,10 +17,10 @@
             </Picker>
             
             <!--display corresponding image for chosen vehicle-->
-            <Image x:Name="vehicleImage" Source="" />
+            <Image x:Name="vehicleImage"/>
             
             <!--display vehicle fact-->
-            <Label x:Name="vehicleFactLabel" Text="" />
+            <Label x:Name="vehicleFactLabel"/>
         </StackLayout>
     </ScrollView>
 
